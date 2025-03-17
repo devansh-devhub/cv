@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Devansh Gautam</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
+
 <body>
-    <h3>My Contact Info </h3>
-    <p>Phone number: +91 1111111111</p>
-    <p>Address: Noida Sector 126</p>
-    <p>Email: gautamdevansh141996@gmail.com</p>
+    <header>
+        <h3>Contact Info</h3>
+    </header>
 
-    <form action="">
-        <label> Your Name: </label>
-        <input type="text"><br>
-        <input type="submit">
+    <section class="contact-info">
+        <p>Phone number: +91 6395655939</p>
+        <p>Address: Noida Sector 126</p>
+        <p>Email: <a href="mailto:gautamdevansh141996@gmail.com">gautamdevansh141996@gmail.com</a></p>
+    </section>
 
-    </form>
-
+    <section>
+        <h4>Contact Form</h4>
+        <form id="contactForm">
+            <label for="yourName">Your Name:</label>
+            <input id="yourName" name="yourName" type="text" required><br>
+            <label for="yourEmail">Email id:</label>
+            <input id="yourEmail" name="yourEmail" type="email" required><br>
+            <label for="yourMessage">Message:</label>
+            <textarea name="yourMessage" id="yourMessage" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </body>
+
 </html>
